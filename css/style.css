@@ -2062,14 +2062,11 @@ h1.post-title a {
 /* End Sidebar Scetion */
 
 
-
-
-
 /***********************************/
 /* Start Contact Section
 /***********************************/
 
-.contact {
+/* .contact {
     background: #f9f9f9;
     background-size: cover;
     background-position: center;
@@ -2141,6 +2138,6 @@ textarea {
 .contact button {
     font-weight: 400;
     margin-top: 30px;
-}
+} */
 
 
