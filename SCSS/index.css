@@ -78,7 +78,7 @@ section.logged-in .login-view {
   visibility: hidden;
 }
 section.logging .login-view .login-buttons-container {
-  display: none;
+  /* display: none; */
 }
 section.logging .loading-container {
   display: block;
@@ -94,7 +94,7 @@ section .login-view {
   justify-content: center;
   align-items: center;
   z-index: 1;
-  /*background-image: url("/images/respeito.png");*/
+  background-image: url("/images/respeito.png");
 }
 section .login-view .login-buttons-container .btn {
   cursor: pointer;

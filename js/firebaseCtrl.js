@@ -1,3 +1,5 @@
+import sanitizeHtml from "sanitize-html";
+
 import { initializeApp } from "firebase/app";
 import { firebaseConfig } from "./firebaseConfig";
 import {

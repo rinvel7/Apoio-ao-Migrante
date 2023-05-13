@@ -7,7 +7,7 @@ section {
   margin: 0;
   padding: 0;
   color: rgb(42, 42, 42);
- background-image: url("/images/respeito.png"); 
+  background-image: url("/images/respeito.png"); 
   box-sizing: border-box;
   &.logged-in {
     .login-view {
@@ -18,7 +18,7 @@ section {
   &.logging {
     .login-view {
       .login-buttons-container {
-        display: none;
+        /* display: none; */
       }
     }
     .loading-container {
@@ -36,8 +36,8 @@ section {
     justify-content: center;
     align-items: center;
     z-index: 1;
-    /*background-image: url("/images/respeito.png");*/
-    .login-buttons-container {
+    background-image: url("/images/respeito.png");
+        .login-buttons-container {
       .btn {
         cursor: pointer;
         display: block;

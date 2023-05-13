@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "firebase": "^9.22.0",
+    "sanitize-html": "^2.10.0"
+  }
+}

@@ -1,5 +1,5 @@
-import FirebaseCtrl from "./scripts/FirebaseCtrl";
-import UiCtrl from "./scripts/UiCtrl";
+import FirebaseCtrl from "./firebaseCtrl";
+import UiCtrl from "./uiCtrl";
 import "./SCSS/index.scss";
 
 const firebaseCtrl = new FirebaseCtrl();
@@ -17,7 +17,7 @@ window.addEventListener("load", () => {
   firebaseCtrl.on("userauthchanged", async (user) => {
     if (user) {
       uiCtrl.removeLogin();
-      uiCtrl.updateUserImage(user.photoURL || "imgs/space-invaders.svg");
+      uiCtrl.updateUserImage(user.photoURL || "static/imgs/space-invaders.svg");
       uiCtrl.showSpinner();
       const novel = await firebaseCtrl.getNovel();
       uiCtrl.updateNovel(novel);
