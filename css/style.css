@@ -66,6 +66,7 @@ a:active{
 
 img {
     width: 100%;
+    object-fit: cover;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -556,7 +557,7 @@ a.navbar-brand {
 
 
 #about-section {
-    padding-top: 80px;
+   
     padding-bottom: 80px;
     background: url(../images/parallax/bg-01.jpg) no-repeat;
     background-size: cover;
@@ -1180,12 +1181,11 @@ and (min-width : 551px){
 
 #service-section {
     padding-top: 80px;
-    padding-bottom: 40px;
 }
 
 .services-post {
   text-align: center;
-    margin-bottom: 80px;
+margin-bottom: 80px;
 }
 .services-post a {
   display: inline-block;
