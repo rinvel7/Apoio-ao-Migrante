@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;1,700&display=swap");
+.dot-flashing {
+  display: inline-block;
+  position: relative;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #000;
+  color: #000;
+  -webkit-animation: dotFlashing 1s infinite linear alternate;
+          animation: dotFlashing 1s infinite linear alternate;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  margin-left: 20px;
+}
+
+.dot-flashing::before,
+.dot-flashing::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.dot-flashing::before {
+  left: -15px;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #000;
+  color: #000;
+  -webkit-animation: dotFlashing 1s infinite alternate;
+          animation: dotFlashing 1s infinite alternate;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.dot-flashing::after {
+  left: 15px;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #000;
+  color: #000;
+  -webkit-animation: dotFlashing 1s infinite alternate;
+          animation: dotFlashing 1s infinite alternate;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes dotFlashing {
+  0% {
+    background-color: #000;
+  }
+  50%, 100% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes dotFlashing {
+  0% {
+    background-color: #000;
+  }
+  50%, 100% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+section {
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: rgb(42, 42, 42);
+  background-image: url("/src/assets/images/respeito.png");
+  box-sizing: border-box;
+}
+section.logged-in .login-view {
+  opacity: 0;
+  visibility: hidden;
+}
+section.logging .login-view .login-buttons-container {
+  /* display: none; */
+}
+section.logging .loading-container {
+  display: block;
+  font-size: 2.3rem;
+}
+section .login-view {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background-image: url("/src/assets/images/respeito.png");
+}
+section .login-view .login-buttons-container .btn {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 20px 20px 20px 60px;
+  background-image: url("/static/imgs/google-original.svg");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 10% center;
+  background-color: #fffcef;
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+section .login-view .login-buttons-container .btn.anonymous-log-in-btn {
+  background-image: url("/static/imgs/account.svg");
+}
+section .loading-container {
+  display: none;
+}
+section .top-bar-1 {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e3dbb6;
+  padding: 12px 5px 0px 5px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  border-bottom: solid 3px #a9a078; 
+  & > :nth-child(1) {
+    width: 200px;
+    height: 95px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center bottom;
+      display: block;
+    }
+  }*/
+}
+section .top-bar-1 > :nth-child(1) {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-right: 1em;
+}
+section .top-bar-1 > :nth-child(1) .photo-user {
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #fff;
+  width: 5rem;
+  height: 5rem;
+  border: solid 3px #fffbe9;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  margin-right: 10px;
+}
+section .top-bar-1 > :nth-child(1) .log-out-btn {
+  width: 4rem;
+  height: 4rem;
+  background-color: #fffcef;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+  border: none;
+}
+section .novel-view {
+  max-width: 1000px;
+  margin: 0 auto 0 auto;
+  padding: 30px 30px;
+}
+section .novel-view .description {
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background-color: white;
+  padding: 40px;
+}
+section .novel-view .description h1 {
+  text-align: center;
+  margin: 0em;
+}
+section .novel-view .description p {
+  margin-top: 1em;
+}
+section .novel-view .description .list li {
+  list-style-type: initial;
+  list-style-position: inside;
+  list-style-position: outside;
+}
+section .novel-view .novel-container .novel-part-container {
+  position: relative;
+  padding: 20px 30px;
+  border-bottom: solid 1px #cdcdcd;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  background-image: url("/static/imgs/lined_paper.png");
+  font-size: 1.3rem;
+}
+section .novel-view .novel-container .novel-part-container .delete-btn {
+  position: absolute;
+  top: 5px;
+  right: 25px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+section .novel-view .novel-container .novel-part-container .delete-btn .delete-label {
+  font-size: 0.8rem;
+}
+section .novel-view .novel-container .novel-part-container .meta {
+  text-align: right;
+  font-size: 0.8rem;
+}
+section .novel-view .form-container textarea {
+  display: block;
+  box-sizing: border-box;
+  border: none;
+  width: 100%;
+  padding: 20px;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  resize: none;
+}
+section .novel-view .form-container button[type=submit] {
+  display: block;
+  width: 100%;
+  background-color: #fffcef;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  font-size: 2rem;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  cursor: pointer;
+  padding: 15px 0;
+}
+
+@media screen and (max-width: 600px) {
+  section .login-view {
+    display: block;
+    padding: 20px;
+  }
+  section .login-view img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=index.css.map */
