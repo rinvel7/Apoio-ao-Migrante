@@ -45,8 +45,10 @@ class FirebaseCtrl {
         this.listeners["userloginstarted"]();
       }
       if (anonymously) {
+        console.log("hola")
         await signInAnonymously(this.auth);
       } else {
+        console.log("hola")
         await signInWithPopup(this.auth, this.googleAuthProvider);
       }
     } catch (error) {

@@ -1,3 +1,6 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
 const firebaseConfig = {
   apiKey: "AIzaSyBW775zwonhEGUOL6LOnAf90LVepyCkiUA",
   authDomain: "libreriasjs-firebase-demo.firebaseapp.com",
