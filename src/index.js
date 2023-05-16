@@ -4,6 +4,19 @@ import "./SCSS/index.scss";
 import './bootstrap/css/bootstrap.min.css';
 import "./SCSS/index.scss";
 
+import "./bootstrap/css/bootstrap.min.css" 
+import "./font-awesome/css/font-awesome.min.css" 
+import "./css/owl.carousel.css" 
+import "./css/owl.theme.css" 
+import "./css/owl.transitions.css" 
+import "./css/animate.css"
+import "./css/lightbox.css"
+import "./css/style.css"
+import "./css/responsive.css"
+import "./comunity.html"
+
+
+
 import './bootstrap/css/bootstrap-theme.min.css';
 import './bootstrap/css/bootstrap.css';
 // import './bootstrap/css/bootstrap.css.map';/
