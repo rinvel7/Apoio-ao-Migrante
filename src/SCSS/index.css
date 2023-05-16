@@ -78,7 +78,7 @@ section.logged-in .login-view {
   visibility: hidden;
 }
 section.logging .login-view .login-buttons-container {
-  /* display: none; */
+  /* display: none;*/
 }
 section.logging .loading-container {
   display: block;
@@ -99,13 +99,13 @@ section .login-view {
 section .login-view .login-buttons-container .btn {
   cursor: pointer;
   display: block;
-  width: 100%;
+  width: 80%;
   padding: 20px 20px 20px 60px;
   background-image: url("/static/imgs/google-original.svg");
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: 10% center;
-  background-color: #fffcef;
+  background-color: #fff3ef;
   border: none;
   margin-bottom: 20px;
   border-radius: 3px;

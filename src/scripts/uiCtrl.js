@@ -1,7 +1,7 @@
 import templateNovelPortion from "./templeteNovelPortion";
 
 class UiCtrl {
-  constructor() {
+  constructor() { 
     this.body = undefined;
   }
   init() {
