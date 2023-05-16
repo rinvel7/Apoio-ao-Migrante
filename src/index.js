@@ -3,11 +3,12 @@ import UiCtrl from "./scripts/uiCtrl";
 import "./SCSS/index.scss";
 import './bootstrap/css/bootstrap.min.css';
 import "./SCSS/index.scss";
-import './bootstrap/css/bootstrap-theme.css';
+
 import './bootstrap/css/bootstrap-theme.min.css';
 import './bootstrap/css/bootstrap.css';
 // import './bootstrap/css/bootstrap.css.map';/
-
+import './bootstrap/js/bootstrap.js';
+import './bootstrap/js/bootstrap.min';
 const firebaseCtrl = new FirebaseCtrl();
 const uiCtrl = new UiCtrl();
 
