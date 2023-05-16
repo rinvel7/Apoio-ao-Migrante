@@ -1,6 +1,12 @@
 import FirebaseCtrl from "./scripts/firebaseCtrl";
 import UiCtrl from "./scripts/uiCtrl";
 import "./SCSS/index.scss";
+import './bootstrap/css/bootstrap.min.css';
+import "./SCSS/index.scss";
+import './bootstrap/css/bootstrap-theme.css';
+import './bootstrap/css/bootstrap-theme.min.css';
+import './bootstrap/css/bootstrap.css';
+// import './bootstrap/css/bootstrap.css.map';/
 
 const firebaseCtrl = new FirebaseCtrl();
 const uiCtrl = new UiCtrl();
