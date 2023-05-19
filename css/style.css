@@ -569,8 +569,8 @@ a.navbar-brand {
 
 
 #about-section {
-    padding-top: 40px;
-    padding-bottom: 80px;
+    padding-top: 0px;
+    padding-bottom: 60px;
    
     background-size: cover;
     background-position: center;
