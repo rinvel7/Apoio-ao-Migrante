@@ -42,6 +42,12 @@ p {
     text-align: center;
     
 }
+ .paragraph  {
+    font-size: 20px;
+    font-family: 'Oswald', Arial, sans-serif;
+    font-weight: 100;
+
+ }
 
 a {
     transition: color 0.2s ease-in-out;
@@ -120,14 +126,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Start Section Title */
 
-.section-title {
-    margin-bottom: 80px;
-}
 .section-title h2{
-    color: #111;
-    font-size: 48px;
-    font-family: 'PT Sans Narrow', Arial, sans-serif;
-    text-transform: none;
+    font-family: 'Oswald', Arial, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 60px;
     
 }
 
@@ -616,7 +621,7 @@ iframe {
 
 .address{
    
-    padding-left: 100px;
+    padding-left: 0px;
     padding-top: 80px;
     padding-bottom: 50px;
     border-bottom: 0;
@@ -878,24 +883,25 @@ iframe {
 
 
 #team-section {
-    padding-top: 80px;
-    padding-bottom: 120px;
+    width: 80%;
+    margin: auto;
+    padding-top: 0px;
+    padding-bottom: 80px;
     background: #fff;
     color: #111;
     overflow: hidden;
+   
 }
 
-#team-section .section-title h2 {
-    color: #fff;
-}
-
-#team-section .section-title p {
-    color: #fff;
+#team-section .row {
+    display: flex;
 }
 
 .team-member {
+    border-radius: 100%;
     position: relative;
     overflow: hidden;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .team-member .team-details {
@@ -1322,20 +1328,22 @@ and (min-width : 551px){
 
 .pricing-header {
     background:#EF8535;
-    padding: 30px 0;
+    padding: 30px 0; box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .pricing-header i {
     font-size: 32px;
-    background: #F2B281;
+    background: #E84F30;
     color: #fff;
     padding: 35px;
     border-radius: 100%;
+    
 }
 
 .pricing-body {
-    height: 340px;
+    height: 405px;
     padding: 30px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 h3.pricing-title {
@@ -1352,7 +1360,7 @@ h3.pricing-title {
 }
 
 .colored-bg {
-    background: #F2B281;
+    background: #E84F30;
 }
 
 .colored-bg i {
@@ -1606,6 +1614,7 @@ h3.pricing-title {
 
 
 .blog-post {
+    margin-top: 60px;
     margin-bottom: 40px;
 }
 
@@ -1729,6 +1738,7 @@ h1.post-title a {
 
 
 .single-blog-post {
+    margin-top: 60px;
     margin-bottom: 40px;
 }
 
@@ -1737,7 +1747,7 @@ h1.post-title a {
 }
 
 .single-blog-post .post-img img {
-    margin: 0 0 16px 0;
+    margin: 0  0 16px 0px;
     border-radius: 3px;
 }
 
@@ -1994,6 +2004,7 @@ h1.post-title a {
 /* Start Sidebar Scetion */
 
 .sidebar .section-heading-2 {
+    margin-top: 60px;
     margin-bottom: 30px;
 }
 
@@ -2174,4 +2185,8 @@ textarea {
     margin-top: 30px;
 }
 
+.img-logo{
+    width: 3.5em;
+    margin-top: -20px;
+}
 
