@@ -1400,6 +1400,14 @@ h3.pricing-title {
   padding: 0 1px;
   width: 20%;
 }
+
+@media (max-width: 768px) {
+    .client-box ul li {
+       display: contents;
+      }
+   
+}
+
 .client-box ul li a {
   display: inline-block;
   text-decoration: none;
