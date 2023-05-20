@@ -1262,61 +1262,6 @@ and (min-width : 551px){
   font-weight: 600;
 }
 
-
-
-/*----------------------------------------------------------*/
-/* Start Fun Facts Counter Section
-/*----------------------------------------------------------*/
-
-.fun-facts {
-    background: url(../images/parallax/emprego.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    padding-top: 120px;
-    padding-bottom: 80px;
-    overflow: hidden;
-}
-
-.counter-item {
-    position:relative;
-    text-align:center;
-    margin-bottom: 40px;
-    background: #fff;
-    padding: 0 20px 40px 20px;
-}
-
-.counter-item p {
-    padding-bottom: 10px;
-    color: #111;
-}
-
-.counter-item h3 {
-  text-align:center;
-  margin-bottom:0px;
-  color:#111;
-    text-transform: none;
-    font-size: 20px;
-}
-
-.counter-item i {
-  font-size:40px;
-    color: #fff;
-    background: #F2B281;
-    padding: 40px 50px;
-}
-
-
-.timer {
-    padding: 10px 0;
-    color: #111;
-    font-size: 48px;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-align:center;
-    line-height:80px;
-    font-family: 'Oswald', sans-serif;
-}
-
 /*----------------------------------------------------------*/
 /*<!-- Start Migrantes Section -->
 /*----------------------------------------------------------*/
@@ -2119,89 +2064,16 @@ h1.post-title a {
 /* End Sidebar Scetion */
 
 
-
-
-
-/***********************************/
-/* Start Contact Section
-/***********************************/
-
-.contact {
-    background: #f9f9f9;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    padding-top: 80px;
-    padding-bottom: 100px;
-}
-
-
-
-.form-control {
-    border-radius: 0;
-    border: 2px solid #111;
-}
-
-.contact .form-group {
-    margin-bottom: 25px;
-}
-
-textarea {
-    width: 100%;
-}
-.contact .form-group input,
-.contact .form-group textarea {
-    padding: 20px;
-}
-
-.contact .form-group input.form-control {
-    height: auto;
-}
-
-.contact .form-group textarea.form-control {
-    height: 236px;
-}
-
-.contact::-webkit-input-placeholder {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #bbb;
-}
-
-.contact:-moz-placeholder {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #bbb;
-}
-
-.contact::-moz-placeholder {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #bbb;
-}
-
-.contact:-ms-input-placeholder {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #bbb;
-}
-
-.contact .text-danger {
-    color: #e74c3c;
-}
-
-.contact button {
-    font-weight: 400;
-    margin-top: 30px;
-}
-
 .img-logo{
     width: 4em;
     margin-top: -20px;
 }
 
+
+@media (max-width: 768px) {
+    
+    .img-logo{
+    width: 3em;
+    margin-left: 20px ;
+    } 
+}
