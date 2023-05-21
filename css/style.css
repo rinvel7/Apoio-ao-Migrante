@@ -2077,6 +2077,9 @@ h1.post-title a {
     margin-top: -20px;
 }
 
+.card-img-top-1 {
+    width: 80%;
+}
 
 @media (max-width: 768px) {
     
