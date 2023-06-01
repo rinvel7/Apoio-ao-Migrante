@@ -49,6 +49,15 @@ p {
 
  }
 
+ 
+@media (max-width: 768px) {
+    
+    .paragraph {
+      margin-top: 80px;
+    
+    } 
+}
+
 a {
     transition: color 0.2s ease-in-out;
     -moz-transition: color 0.2s ease-in-out;
@@ -480,27 +489,58 @@ a.navbar-brand {
 
 
 .banner {
-    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    margin-bottom: -110px;
+   
+    /* text-align: center;
     color: #fff;
-    background: url(../images/banner-1.jpg) no-repeat;
     background-attachment: scroll;
     background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover; */
 }
 
+@media (max-width: 768px) {
+ .banner {
+    padding-bottom: 80.25%;
+ }
+}
+.banner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+  }
+   
 .banner .overlay {
-    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.7); /* Opacidad oscura del fondo */
+    /* background: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100%;
-    margin-bottom: 40px;
-}
+    margin-bottom: 40px; */
+} 
 
 .intro-text {
-    position: relative;
-    padding: 20% 0 15% 0;
+  /*   position: relative;
+    padding: 20% 0 15% 0;; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
 }
 
 .banner .intro-text h1 {    
@@ -540,6 +580,19 @@ a.navbar-brand {
     -o-animation-duration: 2s;
     animation-duration: 2s;
 }
+
+@media (max-width: 768px) {
+    
+    .banner .intro-text p{
+        width: 100%;
+        font-size: 14px;
+        font-weight: 900;
+        line-height: 25px;
+        margin-top: 50px;
+    
+    } 
+}
+
 
 .banner .intro-text .btn-primary {
     padding: 15px 25px;
