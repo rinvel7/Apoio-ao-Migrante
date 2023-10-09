@@ -947,13 +947,15 @@ iframe {
 }
 
 #team-section .row {
-    display: flex;
+    /* display: flex; */
+    display: none;
 }
 
 @media (max-width: 768px) {
     
     #team-section .row{
-        display: block;
+        /* display: block; */
+        display: none;
     } 
 }
 
